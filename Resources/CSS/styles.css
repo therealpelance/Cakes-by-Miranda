@@ -1,0 +1,107 @@
+body {
+	background-color: #f3e4eb;
+}
+
+h2 {
+	font-family: 'Truculenta', sans-serif;
+	font-size: 3em;
+	font-weight: 700;
+	color: whitesmoke;
+	text-shadow: 1px 1px 5px gray;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Truculenta', sans-serif;
+	font-size: 3em;
+	font-weight: 700;
+	color: whitesmoke;
+	text-shadow: 1px 1px 5px gray;
+	text-align: center;
+}
+
+.grid {
+	width: 100%;
+	display: grid;
+	grid-template: repeat(30, 1fr) / 10% 80% 10%;
+}
+
+.box {
+	box-shadow: 0 2px 5px gray;
+}
+
+/* Header */
+
+header {
+	width: 100%;
+	background-color: #ee9fb8;
+	box-shadow: 0 2px 5px gray;
+}
+
+.header-flex {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	box-shadow: 0 1px 5px gray;
+	margin: 10px;
+}
+
+.brand {
+	font-family: 'Sacramento', cursive;
+	font-size: 4em;
+	font-weight: 500;
+	color: whitesmoke;
+	text-shadow: 1px 1px 5px gray;
+	margin: 10px;
+}
+
+.desk-nav {
+	display: inline-flex;
+	justify-content: space-around;
+}
+
+nav a {
+	font-family: 'Truculenta', sans-serif;
+	font-size: 1.7em;
+	text-decoration: none;
+	color: whitesmoke;
+	padding: 10px;
+	text-shadow: 1px 1px 5px gray;
+}
+
+/* Main */
+
+.about {
+	grid-area: 1 / 2 / span 2 / span 1;
+	margin-top: 20px;
+	background-image: url('/Resources/Images/About Us/cupcake_line_lg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.about-title {
+	margin: 30px auto;
+}
+
+.portrait {
+	display: block;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin: 20px auto;
+	box-shadow: 0 2px 5px gray;
+}
+
+.intro-box {
+	background-color: rgba(243, 228, 235, 0.8);
+	width: 60%;
+	margin: 30px auto;
+}
