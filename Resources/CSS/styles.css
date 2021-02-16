@@ -1,3 +1,5 @@
+/* Universal Styles */
+
 body {
 	background-color: #f3e4eb;
 }
@@ -34,6 +36,15 @@ p {
 
 .shadow {
 	box-shadow: 0 2px 5px gray;
+}
+
+hr {
+	height: 1px;
+	width: 50%;
+	background-attachment: color: whitesmoke;
+	box-shadow: 0 2px 5px gray;
+	border: 0.5 whitesmoke;
+	
 }
 
 /* Header */
@@ -142,4 +153,126 @@ nav a {
 .example {
 	max-height: 250px;
 	margin: 10px;
+}
+
+/* Menu */
+
+.menu {
+	grid-area: 3 / 2 / span 1 / span 1;
+	background-color: #ee9fb8;
+}
+
+/* Menu Category Cards */
+
+.category-box {
+	display: flex;
+	justify-content: space-evenly;
+	align-content: space-around;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 20px auto;
+}
+
+.card {
+	background-color: whitesmoke;
+	max-width: 300px;
+}
+
+.img-crop {
+	max-height: 250px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.cat-image {
+	width: 100%;
+}
+
+.cat-text-containter {
+	width: 100%;
+}
+
+.cat-label {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.75em;
+	font-weight: 900;
+	color: #be5e69;
+	text-align: center;
+	text-shadow: 1px 1px 5px rgba(128, 128, 128, 0.4);
+	padding: 10px;
+}
+
+.cat-text {
+	text-align: center;
+	padding: 10px;
+	line-height: 1.5;
+}
+
+.cat-button {
+	display: block;
+	margin: 20px auto;
+	padding: 10px 20px;
+	background-color: #45a47f;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+				inset -2px -2px 3px rgba(0, 0, 0, .6);
+	background-image: linear-gradient(to top left,
+									  rgba(0, 0, 0, .2),
+									  rgba(0, 0, 0, .2) 30%,
+									  rgba(0, 0, 0, 0));
+	color: whitesmoke;
+	text-shadow: 1px 1px 5px #000;
+	font-size: 1.2em;
+}
+
+/* Menu Description & Pricing Area */
+
+.menu-box {
+	background-color: rgba(243, 228, 235, 0.3);
+	width: 90%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.menu-title {
+	font-size: 2.5em;
+}
+
+.menu-heading {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5em;
+	text-decoration: underline;
+	padding: 10px 20px;
+}
+
+.menu-text {
+	text-align: left;
+	padding: 10px 20px;
+}
+
+.type-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-content: space-around;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+
+.menu-list {
+	padding: 10px 30px;
+}
+
+.menu-list li {
+	list-style: disc inside;
+}
+
+/* Contact Us */
+
+.contact {
+	grid-area: 4 / 2 / span 1 / span 1;
+	background-color: #98C29B;
 }
