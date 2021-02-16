@@ -32,7 +32,7 @@ p {
 	grid-row-gap: 30px;
 }
 
-.box {
+.shadow {
 	box-shadow: 0 2px 5px gray;
 }
 
@@ -41,7 +41,6 @@ p {
 header {
 	width: 100%;
 	background-color: #ee9fb8;
-	box-shadow: 0 2px 5px gray;
 }
 
 .header-flex {
@@ -55,7 +54,6 @@ header {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-	box-shadow: 0 1px 5px gray;
 	margin: 10px;
 }
 
@@ -99,7 +97,6 @@ nav a {
 	height: 250px;
 	border-radius: 50%;
 	margin: 20px auto;
-	box-shadow: 0 2px 5px gray;
 }
 
 .intro-box {
@@ -133,15 +130,17 @@ nav a {
 	width: 90%;
 	height: 80%;
 	margin: 20px auto;
-	display: flex;
-	justify-content: space-around;
-	align-content: space-around;
-	flex-wrap: wrap;
 	padding: 10px;
 }
 
+.example-list {
+	display: flex;
+	justify-content: space-evenly;
+	align-content: space-around;
+	flex-wrap: wrap;
+}
+
 .example {
-	max-width: 250px;
 	max-height: 250px;
-	padding: 10px;
+	margin: 10px;
 }
