@@ -9,6 +9,7 @@ h2 {
 	color: whitesmoke;
 	text-shadow: 1px 1px 5px gray;
 	text-align: center;
+	margin: 30px auto;
 }
 
 h3 {
@@ -27,7 +28,8 @@ p {
 .grid {
 	width: 100%;
 	display: grid;
-	grid-template: repeat(30, 1fr) / 10% 80% 10%;
+	grid-template: repeat(30, minmax(min-content, max-content)) / 10% 80% 10%;
+	grid-row-gap: 30px;
 }
 
 .box {
@@ -80,19 +82,15 @@ nav a {
 	text-shadow: 1px 1px 5px gray;
 }
 
-/* Main */
+/* About */
 
 .about {
-	grid-area: 1 / 2 / span 2 / span 1;
+	grid-area: 1 / 2 / span 1 / span 1;
 	margin-top: 20px;
 	background-image: url('/Resources/Images/About Us/cupcake_line_lg.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-}
-
-.about-title {
-	margin: 30px auto;
 }
 
 .portrait {
@@ -121,4 +119,29 @@ nav a {
 	margin: 20px;
 	line-height: 1.5;
 	text-align: center;
+}
+
+/* Work */
+
+.work {
+	grid-area: 2 / 2 / span 1 / span 1;
+	background-color: #ee9fb8;
+}
+
+.example-container {
+	background-color: rgba(243, 228, 235, 0.3);
+	width: 90%;
+	height: 80%;
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+
+.example {
+	max-width: 250px;
+	max-height: 250px;
+	padding: 10px;
 }
