@@ -79,7 +79,9 @@ header {
 
 .desk-nav {
 	display: inline-flex;
+	flex-direction: row;
 	justify-content: space-around;
+	margin: 20px;
 }
 
 nav a {
@@ -89,6 +91,18 @@ nav a {
 	color: whitesmoke;
 	padding: 10px;
 	text-shadow: 1px 1px 5px gray;
+}
+
+/* Mobile Nav */
+
+.material-icons.light {
+	color: whitesmoke;
+	font-size: 1.7em;
+	margin: 20px;
+}
+
+.nav-icon {
+	display: none;
 }
 
 /* About */
@@ -155,6 +169,7 @@ nav a {
 	margin: 10px;
 }
 
+
 /* Menu */
 
 .menu {
@@ -176,6 +191,7 @@ nav a {
 .card {
 	background-color: whitesmoke;
 	max-width: 300px;
+	margin: 10px 5px;
 }
 
 .img-crop {
@@ -338,3 +354,86 @@ footer {
 	text-shadow: 1px 1px 5px gray;
 	margin: 10px 20px;
 }
+
+/* Media Inquiries */
+
+@media only screen and (max-width: 1118px) {
+	.brand {
+		font-size: 3em;
+	}
+	
+	nav a {
+		font-size: 1.25em;
+	}
+}
+
+@media only screen and (max-width: 876px) {
+	.logo {
+		width: 75px;
+		height: 75px;
+	}
+	
+	.brand {
+		font-size: 1.75em;
+	}
+	
+	.category-box {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.example-lan {
+		max-width: 250px;
+		max-height: unset;
+	}
+	
+	/* Change Header Layout */
+	.header-flex {
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	.logo {
+		margin: 10px auto;
+	}
+	
+	.brand {
+		margin: 10px auto;
+		order: 0;
+	}
+		
+	.desk-nav {
+		order: 3;
+		width: 100%;
+		text-align: center;
+		display: none;
+		margin: auto auto;
+	}
+	
+	.nav-icon {
+		order: 2;
+		display: block;
+		text-align: center;
+		margin: auto auto;
+	}
+	
+	/* Mobile Responsive Class */
+	
+	.desk-nav.responsive {
+		position: relative;
+		display: block;
+	}
+	
+	.desk-nav.responsive a {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+}
+
+
+
