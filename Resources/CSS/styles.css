@@ -110,7 +110,7 @@ nav a {
 .about {
 	grid-area: 1 / 2 / span 1 / span 1;
 	margin-top: 20px;
-	background-image: url('./cupcake_line_lg.jpg');
+	background-image: url('../Images/cupcake_line_lg.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
